@@ -4,6 +4,7 @@ import glsl from 'vite-plugin-glsl';
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: process.env.NODE_ENV === 'production' ? '/r3f-singularity/' : '/',
   plugins: [
     react({
       babel: {
